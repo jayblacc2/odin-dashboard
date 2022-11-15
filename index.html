@@ -5,13 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <title>Dashboard</title>
 </head>
 
 <body>
   <div class="layout">
-    <header class="header">HEADER</header>
+    <header class="header">
+      <form class="form">
+        <div class="input-group">
+          <img src="./image/magnify.svg" alt="" class="search-icon">
+          <input type="search" name="search" id="search-input" placeholder="search...">
+        </div>
+      </form>
+      <div class="user">
+        <img src="./image/bell-outline.svg" alt="" class="user-icon">
+        <img src="./image/user-2.png" alt="user-profile" class="user-img">
+        <h4>Morgan Oakley</h4>
+      </div>
+      <div class="user-detail">
+        <img src="./image/user-2.png" alt="user-profile" class="user-img">
+        <div class="user-text">
+          <p>Hi there</p>
+          <h3 class="user-name">
+            Morgan Oakley(&commat;morgan)
+          </h3>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn">New</button>
+        <button class="btn">Upload</button>
+        <button class="btn">Share</button>
+      </div>
+
+    </header>
     <nav class="menu-bar">
       <div class="brand">
         <svg class="icon" viewBox="0 0 24 24">
@@ -31,7 +61,7 @@
               <path
                 d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14" />
             </svg>
-            <span>Profile</span>
+            Profile
           </a></li>
         <li><a href=""><svg class="icon" viewBox="0 0 24 24">
               <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" />
